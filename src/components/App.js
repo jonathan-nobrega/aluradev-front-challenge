@@ -1,14 +1,16 @@
 import '../css/App.css'
 
-function App() {
+export default function App() {
   return (
     <>
       <div>
-        <div className="container">
+        <div className="header-container">
           <div className="header-logo">
             <img src="img/Logo.svg" alt='logo' />
           </div>
-          <input className="header-search" type="text" placeholder="Busque por algo" />
+          <div className="header-search">
+            <input className="header-search-input" type="text" placeholder="Busque por algo" />
+          </div>
           <div className="header-user">
             <img src="img/Photo.png" alt='user' />
             <a style={{ "margin-left": "15px" }} href="localhost:3000">Jony</a>
@@ -70,5 +72,3 @@ function App() {
 
   );
 }
-
-export default App;

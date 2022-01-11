@@ -16,12 +16,12 @@ a:link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: initial; */
     height: 40px;
     margin: 32px;
 }
 
 .header-logo {
+    align-items: center;
     width: 30%;
     margin-right: 3%;
 }
@@ -41,7 +41,6 @@ a:link {
     border-radius: 8px;
     padding: 8px;
     border: 0;
-    /* align-content: center; */
 }
 
 .header-user {
@@ -52,8 +51,9 @@ a:link {
     margin-left: 3%;
 }
 
-.header-menu {
+.header-icons, .header-icon-menu, .header-icon-search {
     display: none;
+    margin-left: 50px;
 }
 
 .page {
@@ -118,10 +118,6 @@ a:link {
     border-radius: 8px;
     border: 0;
     margin-top: 12px;
-    /* margin-right: 32px;
-    margin-left: 32px; */
-    /* padding-left: 16px;
-    padding-right: 16px; */
 }
 
 .codeBox {
@@ -220,16 +216,21 @@ a:link {
 }
 
 @media (max-width: 768px) {
-    .header-user, .menu {
+
+    .header-user,
+    .menu {
         display: none;
     }
 
-    .header-menu {
+    .header-icons {
         display: flex;
         justify-content: flex-end;
         width: 10%;
         margin-left: 3%;
+    }
 
+    .header-icon-menu {
+        display: block;
     }
 
     .page {
@@ -249,5 +250,24 @@ a:link {
 
     .codeInfo-dropdown {
         width: 49%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-search {
+        display: none;
+    }
+
+    .header-icons {
+        width: 50%;
+    }
+
+    .codeInfo-personalize, .header-icon-search {
+        display: block;
+    }
+
+    .codeInfo-dropdown {
+        width: 100%;
     }
 }

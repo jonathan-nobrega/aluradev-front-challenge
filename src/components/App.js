@@ -15,9 +15,11 @@ export default function App() {
             <img src="img/Photo.png" alt='user' />
             <a style={{ "margin-left": "15px" }} href="localhost:3000">Jony</a>
           </div>
-          <div className="header-menu">
-            <img src="img/Menu.svg" alt='menu' />
+          <div className="header-icons">
+            <img className="header-icon-search" src="img/Search.svg" alt='search' />
+            <img className="header-icon-menu" src="img/Menu.svg" alt='menu' />
           </div>
+
         </div>
       </div><div className="page">
         <div className="menu">

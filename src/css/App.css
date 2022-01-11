@@ -32,7 +32,7 @@ a:link {
     width: 100%;
     height: 100%;
     /* background: rgba(255, 255, 255, 0.16); */
-    
+
 }
 
 .header-search-input {
@@ -50,6 +50,10 @@ a:link {
     justify-content: flex-end;
     align-items: center;
     margin-left: 3%;
+}
+
+.header-menu {
+    display: none;
 }
 
 .page {
@@ -146,7 +150,7 @@ a:link {
     margin: 16px;
 }
 
-.codebox-editor-circles {
+.codebox-editor-allCircles {
     position: relative;
     width: auto;
     margin-top: 16px;
@@ -156,15 +160,7 @@ a:link {
     width: 52px;
 }
 
-.codeBox-editor-circleGreen {
-    background: green;
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
-}
-
-.codeBox-editor-circleOrange {
-    background: orange;
+.codeBox-editor-circle {
     border-radius: 50%;
     height: 12px;
     width: 12px;
@@ -200,11 +196,58 @@ a:link {
     margin-left: 3%;
 }
 
-.codeInfo-project {
+.codeInfo-personalize {
+    display: block;
+}
+
+.codeInfo-text {
     border: 0;
     background-color: rgba(255, 255, 255, 0.16);
     margin-bottom: 16px;
     padding: 16px;
     border-radius: 8px;
     color: rgba(255, 255, 255);
+}
+
+.codeInfo-dropdown {
+    border: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.16);
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    .header-user, .menu {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 10%;
+        margin-left: 3%;
+
+    }
+
+    .page {
+        flex-wrap: wrap;
+    }
+
+    .codeInfo {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .codeInfo-personalize {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .codeInfo-dropdown {
+        width: 49%;
+    }
 }

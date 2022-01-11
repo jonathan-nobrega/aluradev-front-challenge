@@ -51,15 +51,16 @@ a:link {
     margin-left: 3%;
 }
 
-.header-icons, .header-icon-menu, .header-icon-search {
+.header-icons,
+.header-icon-menu,
+.header-icon-search {
     display: none;
     margin-left: 50px;
 }
 
-.page {
+.editor-page {
     display: flex;
     justify-content: space-between;
-    /* width: initial; */
     margin: 32px;
 }
 
@@ -263,11 +264,61 @@ a:link {
         width: 50%;
     }
 
-    .codeInfo-personalize, .header-icon-search {
+    .codeInfo-personalize,
+    .header-icon-search {
         display: block;
     }
 
     .codeInfo-dropdown {
         width: 100%;
     }
+}
+
+/* Community tab styles */
+
+.codeFeed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.codeRecord {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    /* height: 464px; */
+    background: rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.codeRecord-code {
+    display: flex;
+    flex-wrap: wrap;
+    background: #6BD1FF;
+    width: 100%;
+    height: 288px;
+    border-radius: 8px;
+}
+
+.codeRecord-details-box {
+    width: 100%;
+    padding: 0px 20px 10px 20px;
+}
+
+.codeRecord-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.codeRecord-details-stats {
+    display: flex;
+}
+
+.code-title {
+    font-size: 21px;
+    line-height: 31px;
 }

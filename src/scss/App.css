@@ -281,6 +281,7 @@ a:link {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 12px;
 }
 
 .codeRecord {
@@ -321,4 +322,20 @@ a:link {
 .code-title {
     font-size: 21px;
     line-height: 31px;
+}
+
+@media (max-width: 768px) {
+    .codeRecord {
+        width: 100%;
+    }
+
+    .codeRecord-code {
+        height: 366px;
+    }
+}
+
+@media (max-width: 480px) {
+    .codeRecord-code {
+        height: 402px;
+    }
 }
